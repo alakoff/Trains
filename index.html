@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trains</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <!-- Moment.js link -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <!-- CSS file link -->
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+  <!-- Javascript link -->
+  <script src="assets/javascript/trains.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Employee Tracker -->
+    <div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <img class="train-pic" src="assets/images/trains.jpg" height=150 width=150 alt="Trains">
+        <h2 class="text-center">Trains   Trains   Trains</h2>
+        <h4 class="text-center">Don't Miss Your Train !</h4>
+        <div class="timeDisplay"></div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <!-- Current Trains -->
+          <div class="card mb-4">
+            <div class="hdrCurrentTrains">Current Trains (Refreshed Every 60 Seconds)</div>
+            <div class="card-body">
+              <table class="table table-sm table-hover table-striped table-compressed" id='train-table'>
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequeny (Min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody id="train-details" >
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Add Train  -->
+          <div class="card mb-4">
+            <div class="hdrAddTrain">Add Train</div>
+            <div class="card-body">
+
+              <!-- Train Add Form -->
+              <form class='inputForm'>
+                <div class="form-group">
+                  <label for="inputTrainName">Train Name</label>
+                  <input class="form-control" id="inputTrainName" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="inputDestination">Destination</label>
+                  <input class="form-control" id="inputDestination" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="inputFirstTrainTime">First Train Time (HH:MM Military Time)</label>
+                  <input class="form-control" id="inputTrainFirstTime"  type="text">
+                </div>
+                <div class="form-group">
+                  <label for="inputFrequency">Frequency (Min)</label>
+                  <input class="form-control" id="inputFrequency" type="text">
+                </div>
+                <button class="btn btn-primary" id="btnAddTrain">Submit</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+</body>
+</html>
+
+
+<

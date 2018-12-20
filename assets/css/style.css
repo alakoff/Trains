@@ -1,0 +1,49 @@
+body {
+    background: black;
+}
+.jumbotron {
+    background: #a86921;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    min-height: 250px;
+}
+.timeDisplay {
+    float:left;
+    background: black;
+    margin-left: -350px;
+    margin-top: 60px;
+    color: white;
+    padding: 5px;
+}
+.train-pic {
+    float:left;
+    margin-left: 30px;
+    border-radius: 25px 25px 25px 25px;
+}
+.text-center {
+    float: left;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 100px;
+    text-align: center;
+}
+.hdrCurrentTrains {
+    background: #5d7889;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.hdrAddTrain {
+    background: #5d7889;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+#btnAddTrain {
+    background: #a86921;
+    color: white;
+    font-weight: bold;
+    border:solid gray 1px;
+}
