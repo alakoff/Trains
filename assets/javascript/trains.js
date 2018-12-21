@@ -121,7 +121,8 @@ function refreshData() {
          }
 
          var trainFrequency = parseInt($("#inputFrequency").val().trim());
-         if (trainFrequency === '') {
+         var trainFrequency1 = $("#inputFrequency").val().trim()
+         if (trainFrequency1 === '' ) {
              alert('Please enter a frequency for the train!');
              goodData = 'N';
          }
